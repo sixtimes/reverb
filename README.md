@@ -1,2 +1,0 @@
-# reverb
- reverb api exercise
