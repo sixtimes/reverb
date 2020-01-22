@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  form(action='/categories', method='post')
+    div(class='form-group')
+      label(for='query') Category Search
+      input(class='form-control' type='text' name='query' placeholder='Enter Category Name')
+    div(class='form-group')
+      button(type='submit', class='btn btn-primary') Submit
+  if results === 'no_results'
+    p Sorry. No results were found for your search.
+  else if results
+    ul(class='list-group')
+    each category in results
+      li(class='list-group-item')= category.full_name
