@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    nav(class='navbar navbar-expand-lg navbar-light fixed-top bg-info')
+        a(href='/', class='navbar-brand') Reverb API
+        ul(class='navbar-nav')
+            li(class='nav-item')
+                a(href='/categories', class='nav-link') Categories
+            li(class='nav-item')
+                a(href='/listings', class='nav-link') Listings
+    div(class='container')
+        block content
